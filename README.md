@@ -1,2 +1,3 @@
-# static-website
-Static website for the Education group
+# The Ilm Foundation - Website
+
+Static website for The Ilm Foundation
