@@ -12070,7 +12070,7 @@ h5,
 
 @media (max-width: 1199.98px) {
   .hero-wrap {
-    background-position: top center !important;
+    background-position: top left !important;
   }
 }
 
@@ -12086,25 +12086,25 @@ h5,
   height: 800px;
 }
 
-@media (max-width: 1199.98px) {
+/* @media (max-width: 1199.98px) {
   .hero-wrap .overlay {
     opacity: 0;
   }
-}
+} */
 
 .hero-wrap.hero-wrap-2 {
-  height: 800px;
+  height: 400px;
 }
 
 .hero-wrap.hero-wrap-2 .overlay {
   background: #000000;
   width: 100%;
   opacity: .3;
-  height: 800px;
+  height: 400px;
 }
 
 .hero-wrap.hero-wrap-2 .slider-text {
-  height: 800px;
+  height: 400px;
 }
 
 .slider-text {
@@ -12491,11 +12491,11 @@ textarea.form-control {
   position: relative;
 }
 
-@media (max-width: 767.98px) {
+/* @media (max-width: 767.98px) {
   .ftco-section {
     padding: 6em 0;
   }
-}
+} */
 
 .ftco-no-pt {
   padding-top: 0 !important;
@@ -13605,7 +13605,7 @@ footer p.license {
 .sidebar-box {
   margin-bottom: 30px;
   padding: 25px;
-  font-size: 15px;
+  padding-top: 0;
   width: 100%;
   background: #fff;
 }
