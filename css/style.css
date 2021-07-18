@@ -12081,8 +12081,8 @@ h5,
   right: 0;
   bottom: 0;
   content: '';
-  opacity: .1;
-  background: #fff;
+  opacity: .65;
+  background: #000;
   height: 800px;
 }
 
