@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>The Ilm Foundation</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Raleway&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="description"
+          content="We sponsor students from financially weak Muslim families who are unable to afford their education">
+
+    <link rel="icon" href="./favicon.png"/>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style type="text/css">
+        body {
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+
+        .mapael .map {
+            position: relative;
+            max-width: 85%;
+        }
+
+        .mapael .mapTooltip {
+            position: absolute;
+            background-color: #fff;
+            moz-opacity: 0.70;
+            opacity: 0.70;
+            filter: alpha(opacity=70);
+            border-radius: 10px;
+            padding: 10px;
+            z-index: 1000;
+            max-width: 200px;
+            display: none;
+            color: #343434;
+        }
+    </style>
+
+
+</head>
+
+<nav class="navbar navbar-expand-lg" id="ftco-navbar" style="margin-right: -5%; margin-left: -5%;">
+    <div class="container">
+        <a class="navbar-brand" href="./index.html"">
+        The <span class="text-primary">Ilm</span> Foundation
+        </a>
+    </div>
+</nav>
+<body>
+
+<section class="ftco-section">
+    <div class="container">
+
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h1 class="display-5">Our Students</h1>
+            <p class="lead">33+ families across 9 states</p>
+        </div>
+
+
+        <div class="mapcontainer d-flex justify-content-center">
+            <div class="map">
+                <span></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="row">
+        <div class="container col-lg-12" id="info_container">
+            <div id="main_info"></div>
+            <div class="card-columns" id="student_list">
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js" charset="utf-8"></script>
+<script src="./js/jquery.mapael.js" charset="utf-8"></script>
+<script src="./js/maps/india_states.js" charset="utf-8"></script>
+<script src="./js/maps/students.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+    $(function () {
+        const students_by_states = get_students();
+        let areas = {}
+        for (const state in students_by_states) {
+            areas[`${state}`] = {
+                value: `${students_by_states[state].length}`,
+                // href: "#",
+                // tooltip: {content: `<span style='font-weight:bold;'>${state}</span><br/>${students_by_states[state].length}`}
+            };
+
+        }
+        console.log(areas);
+        $(".mapcontainer").mapael({
+            map: {
+                name: "india_states",
+                defaultArea: {
+                    attrs: {
+                        stroke: "#fff",
+                        "stroke-width": 1
+                    },
+                    attrsHover: {
+                        "stroke-width": 2
+                    },
+                    eventHandlers: {
+                        click: function (e, id, mapElem, textElem) {
+                            console.log(id);
+                            students = students_by_states[id];
+                            console.log(students);
+
+                            html_text = '';
+                            if (students.length === 0) {
+                                $('#student_list').html('');
+                                $('#main_info').html('');
+                                return;
+                            }
+                            family = students.length === 1 ? "family" : "families";
+                            $('#main_info').html(`<h3 class="font-weight-normal">${students.length} ${family} from ${id}</h3>`);
+                            for (const student in students) {
+                                html_text += `
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">${students[student]["Name"]}</h5>
+                                                <p class="card-text"><small class="text-muted">${students[student]["City"]}</small></p>
+                                                <p class="card-text font-weight-normal">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+
+                                            </div>
+                                        </div>
+
+`
+                            }
+                            console.log(html_text)
+                            $('#student_list').html(html_text);
+
+                            $([document.documentElement, document.body]).animate({
+                                scrollTop: $("#main_info").offset().top
+                            }, 200);
+                        }
+                    }
+                }
+            },
+            legend: {
+
+                area: {
+                    display: false,
+                    slices: [
+                        {max: 0, attrs: {fill: "#bdbdbd"}},
+                        {min: 0, max: 1, attrs: {fill: "#81d4fa"}},
+                        {min: 1, max: 2, attrs: {fill: "#29b6f6"}},
+                        {min: 2, max: 3, attrs: {fill: "#039be5"}},
+                        {min: 3, max: 4, attrs: {fill: "#0288d1"}},
+                        {min: 4, max: 5, attrs: {fill: "#0277bd"}},
+                        {min: 5, attrs: {fill: "#01579b"}},
+                    ]
+                }
+            },
+            areas: areas
+        });
+    });
+</script>
+
+</html>
