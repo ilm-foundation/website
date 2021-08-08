@@ -13776,3 +13776,43 @@ footer p.license {
     stroke-dashoffset: -136px;
   }
 }
+
+
+/*.carousel {*/
+/*  background-color: #bf9e7d;*/
+/*}*/
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  /*outline: black;*/
+  background-size: 100%, 100%;
+  /*border-radius: 50%;*/
+  /*border: 1px solid black;*/
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '›';
+  font-size: 55px;
+  color: #bf9e7d;
+}
+
+.carousel-control-prev-icon:after {
+  content: '‹';
+  font-size: 55px;
+  color: #bf9e7d;
+}
+
+.carousel-ind {
+  background-color: blue;
+}
+
+.img {
+    float: left;
+    width:  100%;
+    height: 300px;
+    object-fit: cover;
+}
