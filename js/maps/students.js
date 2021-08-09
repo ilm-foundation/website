@@ -52,8 +52,7 @@ function get_students() {
         ],
         'Telengana': [
             {"Name": "Zareen", "City": "Hyderabad", "Class": "N/A"},
-            {"Name": "Asma & Nazima", "City": "Hyderabad", "Class": "N/A"},
-            {"Name": "Aamir", "City": "Hyderabad", "Class": "N/A"},
+            {"Name": "Asma, Nazima & Aamir", "City": "Hyderabad", "Class": "N/A"},
         ],
         'Tripura': [],
         'Uttar Pradesh': [
@@ -61,8 +60,7 @@ function get_students() {
             {"Name": "Namra & Aisha Noor", "City": "Saharanpur", "Class": "N/A"},
             {"Name": "Arsalan & Rumaisa", "City": "Rampur", "Class": "N/A"},
             {"Name": "Subhan & Amaan", "City": "Muzaffarnagar", "Class": "N/A"},
-            {"Name": "Shaan", "City": "Muzaffarnagar", "Class": "N/A"},
-            {"Name": "Alina", "City": "Muzaffarnagar", "Class": "N/A"},
+            {"Name": "Shaan & Alina", "City": "Muzaffarnagar", "Class": "N/A"},
             {"Name": "Umar & Basit", "City": "Lucknow", "Class": "N/A"},
             {"Name": "Haider", "City": "Lucknow", "Class": "N/A"},
             {"Name": "Arshad & Basit", "City": "Lucknow", "Class": "N/A"},

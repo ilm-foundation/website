@@ -11905,3 +11905,25 @@ transform:scale(1.5); /* this is grow amount */
   border-color: #bf9e7d;
   background-color: #bf9e7d;
 }
+
+img {
+  aspect-ratio: attr(width) / attr(height);
+}
+
+.width-auto {
+    width: auto;
+}
+
+
+.carousel-indicators li {
+    border: none;
+    background: #ccc;
+}
+
+.carousel-indicators li.active {
+    background: #bf9e7d;
+}
+
+.better-font {
+  font-weight: 300;
+}
