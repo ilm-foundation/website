@@ -35,6 +35,7 @@
 
     <link href="./css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/timeline.css">
 
 
 </head>
@@ -325,133 +326,334 @@
             </h2>
         </div>
 
+        <div class="container">
+            <section class="cd-horizontal-timeline">
+                <div class="timeline">
+                    <div class="events-wrapper">
+                        <div class="events">
+                            <ol>
+                                <li><a href="#0" data-date="2022-09-01" class="selected">Sep '22</a></li>
+                                <li><a href="#0" data-date="2022-08-01">Aug '22</a></li>
+                                <li><a href="#0" data-date="2022-07-01">Jul '22</a></li>
+                                <li><a href="#0" data-date="2022-06-01">Jun '22</a></li>
+                                <li><a href="#0" data-date="2022-05-01">May '22</a></li>
+                                <li><a href="#0" data-date="2022-04-01">Apr '22</a></li>
+                                <li><a href="#0" data-date="2022-03-01">Mar '22</a></li>
+                                <li><a href="#0" data-date="2022-02-01">Feb '22</a></li>
+                                <li><a href="#0" data-date="2022-01-01">Jan '22</a></li>
+                            </ol>
 
-        <div class="container my-4">
-            <!--Carousel Wrapper-->
-            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel"
-                 data-interval="false">
+                            <span class="filling-line" aria-hidden="true"></span>
+                        </div> <!-- .events -->
+                    </div> <!-- .events-wrapper -->
 
-                <!--Controls-->
-                <div class="controls-bottom text-center" style="margin-bottom: 10px">
-                    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i
-                            class="fa fa-chevron-circle-left fa-2x"></i></a>&nbsp; &nbsp; &nbsp;
-                    <a class="btn-floating btn-lg" href="#multi-item-example" data-slide="next"><i
-                            class="fa fa-chevron-circle-right fa-2x"></i></a>
-                </div>
-                <!--/.Controls-->
+                    <ul class="cd-timeline-navigation">
+                        <li><a href="#0" class="prev inactive">Prev</a></li>
+                        <li><a href="#0" class="next">Next</a></li>
+                    </ul> <!-- .cd-timeline-navigation -->
+                </div> <!-- .timeline -->
 
-                <!--Slides-->
-                <div class="carousel-inner" role="listbox">
+                <div class="events-content">
+                    <ol>
+                        <li class="selected" data-date="2022-09-01">
+                            <div class="row">
+                                <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top img"
+                                             src="https://picsum.photos/id/1035/900/600"
+                                             width="900"
+                                             height="600"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h6>SEPTEMBER 2022</h6>
+                                            <h3 class="card-title">Dream It, Wish It, Achieve It</h3>
+                                            <p class="card-text text-justify better-font">
+                                                Musfira, is one of our diligent mentee. By the grace of Allah Almighty she scored 92% in her 10th CBSE board exams. Now, She is pursuing her dream to become a Company Secretary. She lives with her grandmother in Bangalore.
+                                            </p>
+                                            <p class="card-text text-justify better-font">
+                                                Musfira is really hardworking and steadfast regarding her aspirations. She wakes up early in the morning to study and also helps her grandmother at home. She is honestly dedicated and passionate and we pray that she achieves all her dreams, In Sha Allah!
+                                            </p>
+                                        </div>
 
-                    <!--First slide-->
-                    <div class="carousel-item active">
-
-                        <div class="row">
-                            <div class="col-md-3"></div>
-                            <div class="col-md-6 d-flex justify-content-center">
-                                <div class="card mb-2">
-                                    <img class="card-img-top img"
-                                         src="./images/team_resized.jpeg"
-                                         width="900"
-                                         height="600"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h6>JULY 2021</h6>
-                                        <h4 class="card-title">Extraordinary team work</h4>
-                                        <p class="card-text text-justify better-font">
-                                            Namra, Ayesha, and Afia hail from Saharanpur and live in
-                                            one room rented house. They study in New Era Academy
-                                            in grades X, VII, V respectively. The girls are well aware of
-                                            their financial condition and aim to become well educated
-                                            and financially stable...</p>
-                                        <a role="button" target="_blank"
-                                           href="./newsletters/Newsletter_2021_07.pdf">Read more</a>
+                                        <div class="m-4">
+                                            <blockquote class="blockquote p-4 bg-primary text-light rounded">
+                                                <p class="font-italic">
+                                                    <i class="fa fa-quote-left mr-3 text-white"></i>
+                                                    Everyone gets happy and gets sad, but you should turn your happiness into gratitude (to Allāh) and your sadness into patience (ṣabr).
+                                                </p>
+                                                <footer class="blockquote-footer text-white-50">
+                                                    <cite>Ibn Kathīr, Tafsir of Al-Ḥadīd 57:23</cite>
+                                                </footer>
+                                            </blockquote>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3"></div>
-                        </div>
+                        </li>
 
-                    </div>
-                    <!--/.First slide-->
-
-                    <!--Second slide-->
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-3"></div>
-                            <div class="col-md-6 d-flex justify-content-center">
-                                <div class="card mb-2">
-                                    <img class="card-img-top img"
-                                         src="./images/power_resized.jpeg"
-                                         width="900"
-                                         height="600"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h6>JUNE 2021</h6>
-                                        <h4 class="card-title">Power up!</h4>
-                                        <p class="card-text text-justify better-font">
-                                            Arshiya Taj is pursuing BCom From Loyla Degree College in
-                                            Bangalore. She believes in the power of hard-work, and
-                                            persistence. She funded her college fees herself by
-                                            tutoring primary students for the first two years, post
-                                            which The Ilm foundation found her...</p>
-                                        <a role="button" target="_blank"
-                                           href="./newsletters/Newsletter_2021_06.pdf">Read more</a>
+                        <li data-date="2022-08-01">
+                            <div class="row">
+                                <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top img"
+                                             src="https://images.pexels.com/photos/3077882/pexels-photo-3077882.jpeg?cs=srgb&fm=jpg&w=900"
+                                             width="900"
+                                             height="600"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h6>AUGUST 2022</h6>
+                                            <h3 class="card-title">A Tale of Determination</h3>
+                                            <p class="card-text text-justify better-font">
+                                                Aarzoo is an intermediate passout (2022) student and lives in Muzaffarnagar. She is determined and an ambitious student and had scored 77.6% in Uttar Pradesh 12th Board Examination. By the will of Allah, she has gone through many ups and downs in her life. She lost her father about two years ago who was the only bread earner for the family.
+                                            </p>
+                                            <p class="card-text text-justify better-font">
+                                                She aspires to become a doctor and become independent as soon as possible to support her family and fulfill their dreams. TIF is currently supporting her with NEET-UG preparation mentoring and coaching fees.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3"></div>
-                        </div>
-                    </div>
-                    <!--/.Second slide-->
+                        </li>
 
-                    <!--Third slide-->
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-3"></div>
-                            <div class="col-md-6 d-flex justify-content-center">
-                                <div class="card mb-2">
-                                    <img class="card-img-top img"
-                                         src="./images/path_resized.jpeg"
-                                         width="900"
-                                         height="600"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h6>MAY 2021</h6>
-                                        <h4 class="card-title">Forging new paths</h4>
-                                        <p class="card-text text-justify better-font">
-                                            Saba Shaikh is a final year IT engineering student at Saboo
-                                            Siddik College in Mumbai. She comes from a family of 6
-                                            where she is the eldest child. Her father works in a
-                                            garment shop and has since the pandemic last year
-                                            struggled with paying Saba's college fees...</p>
-                                        <a role="button" target="_blank"
-                                           href="./newsletters/Newsletter_2021_05.pdf">Read more</a>
+                        <li data-date="2022-07-01">
+                            <div class="row">
+                                <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top img"
+                                             src="https://images.pexels.com/photos/12102983/pexels-photo-12102983.jpeg?cs=srgb&fm=jpg&w=900"
+                                             width="900"
+                                             height="600"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h6>JULY 2022</h6>
+                                            <h3 class="card-title">The Blooming Lotus</h3>
+                                            <p class="card-text text-justify better-font">
+                                                Sana is a student in class X studying in Shikhsha Matriculation high School in Chennai. Hers is a family too that is having a tough time recovering from covid. While she is a bright student, she faced significant losses in her studies due to inadequate digital provisions.
+                                            </p>
+                                            <p class="card-text text-justify better-font">
+                                                Her father works as a cab driver and her mother used to due odd jobs to earn some money however, her health has deteriorated in the last 2 years because of which she cannot engage in other work. Her mother's recent hospital bills have strained family finances. TIF helps with Sana's educational costs because of which she can continue her studies with ease. We pray for the family's wellbeing and success!
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3"></div>
-                        </div>
-                    </div>
-                    <!--/.Third slide-->
+                        </li>
 
+                        <li data-date="2022-06-01">
+                            <div class="row">
+                                <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top img"
+                                             src="https://images.pexels.com/photos/9429448/pexels-photo-9429448.jpeg?cs=srgb&fm=jpg&w=900"
+                                             width="900"
+                                             height="600"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h6>JUNE 2022</h6>
+                                            <h3 class="card-title">New Beginnings</h3>
+                                            <p class="card-text text-justify better-font">
+                                                Alina is an LLB student who hails from Muzaffarnagar, UP. She is a brilliant student with excellent performance in academics. She always dreamt of becoming a lawyer, but her dream was shattered when her father, the sole bread winner of the family, passed away due to a heart attack 13 years ago.
+                                            </p>
+                                            <p class="card-text text-justify better-font">
+                                                Of all the compromises they made, education was not one of them. Although for her, it meant going from a private school to a Govt school. Ilm Foundation fully supports her educational expenses since May 2021. She aims to pursue LLM and become a judge in a few years and make the conditions of the Muslim community in UP slightly better. May Allah accept her and our efforts. Ameen!
+                                            </p>
+                                        </div>
 
-                </div>
-                <!--/.Slides-->
+                                        <div class="m-4">
+                                            <blockquote class="blockquote p-4 bg-primary text-light rounded">
+                                                <p class="font-italic">
+                                                    <i class="fa fa-quote-left mr-3 text-white"></i>
+                                                    He is the One who created death and life in order to test which of you is best in deeds. And He is the Almighty, All-Forgiving.
+                                                </p>
+                                                <footer class="blockquote-footer text-white-50">
+                                                    <cite>Surah Mulk Verse 2; Translation: Dr. Mustafa Khattab</cite>
+                                                </footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
 
-                <!--Indicators-->
-                <div class="container" style="padding: 25px;">
-                    <ol class="carousel-indicators">
-                        <li data-target="#multi-item-example" data-slide-to="0" class="carousel-ind active"></li>
-                        <li data-target="#multi-item-example" data-slide-to="1" class="carousel-ind"></li>
-                        <li data-target="#multi-item-example" data-slide-to="2" class="carousel-ind"></li>
+                        <li data-date="2022-05-01">
+                            <div class="row">
+                                <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top img"
+                                             src="https://images.pexels.com/photos/869258/pexels-photo-869258.jpeg?cs=srgb&fm=jpg&w=900"
+                                             width="900"
+                                             height="600"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h6>MAY 2022</h6>
+                                            <h3 class="card-title">Reaching the Summit</h3>
+                                            <p class="card-text text-justify better-font">
+                                                Nusrath is a final year physiotherapy student at Meenakshi Academy of Higher Education and Research in Chennai. Her father used to work as a labourer but suffered from a stroke about an year ago. Since then, the family has had a difficult time making ends meet.
+                                            </p>
+                                            <p class="card-text text-justify better-font">
+                                                Her educational requirements are fulfilled in part through donations on IndiaZakat of which TIF has been a steady contributor as well. Nusrath is a lively and hardworking young girl. She shows great promise to fulfill her career aspirations and family obligations. We pray that she is able to find extraordinary success in this life and the next!
+                                            </p>
+                                        </div>
+
+                                        <div class="m-4">
+                                            <blockquote class="blockquote p-4 bg-primary text-light rounded">
+                                                <p class="font-italic">
+                                                    <i class="fa fa-quote-left mr-3 text-white"></i>
+                                                    You are the best community ever raised for humanity—you encourage good, forbid evil, and believe in Allah.
+                                                </p>
+                                                <footer class="blockquote-footer text-white-50">
+                                                    <cite>Surah Ale-Imran Verse 110; Translation: Dr. Mustafa Khattab</cite>
+                                                </footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li data-date="2022-04-01">
+                            <div class="row">
+                                <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top img"
+                                             src="https://images.pexels.com/photos/117178/pexels-photo-117178.jpeg?cs=srgb&fm=jpg&w=900"
+                                             width="900"
+                                             height="600"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h6>APRIL 2022</h6>
+                                            <h3 class="card-title">Light at the End of the Tunnel</h3>
+                                            <p class="card-text text-justify better-font">
+                                                Tasmiya Kausar just completed class X from Madrasa-e-Tarbiyatul Banat in Bangalore. She lives with her maternal grandparents. Her grandfather is a carpenter who helps with the daily needs. Her father left the family 9 years ago and hasn't contacted the family since then. After her father left, the family has run into financial troubles time and again.
+                                            </p>
+                                            <p class="card-text text-justify better-font">
+                                                While her grandfather is able to provide for some financial relief they still need financial assistance especially for education which the group has supported. Her mother is a housewife and is in search for a tailoring job. She has 3 younger siblings. One younger sister and two younger brothers. All of them are enrolled at school.
+                                            </p>
+                                            <p class="card-text text-justify better-font">
+                                                Tasmiya is a very hardworking student and has an excellent academic record. She aims to become a CS company secretary and so has taken up commerce CEBA combination as her pre-university combination. We pray that she succeeds with flying colours!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li data-date="2022-03-01">
+                            <div class="row">
+                                <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top img"
+                                             src="https://images.pexels.com/photos/6456264/pexels-photo-6456264.jpeg?cs=srgb&fm=jpg&w=900"
+                                             width="900"
+                                             height="600"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h6>MARCH 2022</h6>
+                                            <h3 class="card-title">Fighting the Odds</h3>
+                                            <p class="card-text text-justify better-font">
+                                                Alvina, Atif, Ayaz live in Atrauli, Uttar Pradesh with their mother Mrs. Shabana after the sad demise of their father. Alivina and Atif completed their senior secondary education in 2021. Ayaz studies in City Convent School, Atrauli in class 8th. The family owns a local kirana store that makes their ends meet to some extent.
+                                            </p>
+                                            <p class="card-text text-justify better-font">
+                                                Being sponsored by the group, Alvina and Atif were aided in the preparation of various competitive exams for B.A, B.B.A, B.Com in Jamia Milia Islamia and Aligarh Muslim University in the form of books, application fees and a smart phone. Sadly not being selected, they still aim to start a graduation course through applying to various universities. Ayaz has been able to clear his class 8th exams. Despite the odds, Alvina and Atif remain motivated in pursuing a higher education. Their mother has faith in them and constantly pushes them to study better. We pray Allah SWT makes the journey easy for them!
+                                            </p>
+                                        </div>
+
+                                        <div class="m-4">
+                                            <blockquote class="blockquote p-4 bg-primary text-light rounded">
+                                                <p class="font-italic">
+                                                    <i class="fa fa-quote-left mr-3 text-white"></i>
+                                                    Narrated Abu Musa:
+                                                    <br>
+                                                    The Prophet (صلى الله عليه وسلم) said, "A believer to another believer is like a building whose different parts enforce each other." The Prophet (صلى الله عليه وسلم) then clasped his hands with the fingers interlaced (while saying that).
+                                                </p>
+                                                <footer class="blockquote-footer text-white-50">
+                                                    <cite>Sahih Al-Bukhari 2446, Book 46, Hadith 7</cite>
+                                                </footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li data-date="2022-02-01">
+                            <div class="row">
+                                <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top img"
+                                             src="https://images.pexels.com/photos/753619/pexels-photo-753619.jpeg?cs=srgb&fm=jpg&w=900"
+                                             width="900"
+                                             height="600"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h6>FEBRUARY 2022</h6>
+                                            <h3 class="card-title">Weathering the Storm</h3>
+                                            <p class="card-text text-justify better-font">
+                                                Thabina studies in class IX at Leo Matriculation Highschool in Chennai. As many families did, Thabina's family also suffered a great deal financially because of the pandemic. Her father worked in a car workshop and her mother is a housewife. She has a younger brother in class II. Her father had undergone a surgery because of which getting back to business was difficult.
+                                            </p>
+                                            <p class="card-text text-justify better-font">
+                                                Thabina is an ambitious and driven young girl who wishes to become an aalimah. The pandemic presented hurdles for the children to keep up with their studies nevertheless, Thabina maintains a very good academic record. We pray the family is able to make good progress and we're excited to see what Thabina goes on to achieve in sha Allah.
+                                            </p>
+                                        </div>
+
+                                        <div class="m-4">
+                                            <blockquote class="blockquote p-4 bg-primary text-light rounded">
+                                                <p class="font-italic">
+                                                    <i class="fa fa-quote-left mr-3 text-white"></i>
+                                                    Ibn Umar reported:
+                                                    <br>
+                                                    The Prophet (صلى الله عليه وسلم) said, "The most beloved people to Allah are those who are most beneficial to the people. The most beloved deed to Allah is to make a Muslim happy, or to remove one of his troubles, or to forgive his debt, or to feed his hunger..."
+                                                </p>
+                                                <footer class="blockquote-footer text-white-50">
+                                                    <cite>Al-Mu'jam Al-Awsaṭ 6192; Graded Ṣaḥīḥ By Al-Albānī</cite>
+                                                </footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li data-date="2022-01-01">
+                            <div class="row">
+                                <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top img"
+                                             src="https://images.pexels.com/photos/5905493/pexels-photo-5905493.jpeg?cs=srgb&fm=jpg&w=900"
+                                             width="900"
+                                             height="600"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h6>JANUARY 2022</h6>
+                                            <h3 class="card-title">Little Battles</h3>
+                                            <p class="card-text text-justify better-font">
+                                                Furqan Khan lives in Gaya, Bihar with his mother and younger brother. His mother works as a housemaid and works hard to make sure that Furqan studies well. He was previously enrolled at Banat Model school however the school did not provide quality education and Furqan managed through the successive lockdowns by going for tuitions.
+                                            </p>
+                                            <p class="card-text text-justify better-font">
+                                                After being selected for sponsorship by the group, he was shifted to a better school. Furqan now studies in class 2 at Guardian Public School.  Furqan is a passionate young boy who wants to study. He has some trouble with his studies from time to time perhaps due to the events in the last two years. But he shows positive signs and his mentor is working hard with him. We pray that Allah (SWT) makes the road ahead easy for him and his family.
+                                            </p>
+                                        </div>
+
+                                        <div class="m-4">
+                                            <blockquote class="blockquote p-4 bg-primary text-light rounded">
+                                                <p class="font-italic">
+                                                    <i class="fa fa-quote-left mr-3 text-white"></i>
+                                                    Abu Huraira reported Allah's Messenger (صلى الله عليه وسلم) as saying:
+                                                    <br>
+                                                    "Whoever removes a worldly hardship from a believer, Allah will remove one of the hardships of the Day of Resurrection from him. Whoever conceals(the fault of) a Muslim in this world, Allah will conceal him(his faults) in this world and the Hereafter. Allah will help a person so long as he is helping his brother..."
+                                                </p>
+                                                <footer class="blockquote-footer text-white-50">
+                                                    <cite>Sahih Muslim 2699</cite>
+                                                </footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                     </ol>
-                </div>
-
-
-            </div>
-            <!--/.Carousel Wrapper-->
-
+                </div> <!-- .events-content -->
+            </section>
         </div>
     </div>
 </section>
@@ -515,6 +717,7 @@
 <script src="./js/jquery.easing.1.3.js"></script>
 <script src="./js/jquery.waypoints.min.js"></script>
 <script src="./js/main.js"></script>
+<script src="./js/timeline.js"></script>
 
 
 </body>
